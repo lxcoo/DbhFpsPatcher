@@ -181,6 +181,7 @@
             this.Controls.Add(this.DescriptionLabel);
             this.Controls.Add(this.TitleLabel);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Generic Fps Patcher";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
