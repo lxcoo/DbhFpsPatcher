@@ -52,14 +52,14 @@ namespace DbhFpsPatcher
         {
             if (File.Exists(this.PathBox.Text) && Path.GetFileName(this.PathBox.Text) == GameExe)
             {
-                this.StatusText.Text = "Found executable!";
+                this.StatusText.Text = "找到exe文件！";
                 this.StatusText.ForeColor = Color.YellowGreen;
                 this.PatchButton.Enabled = true;
                 this.progressBar1.Value = 0;
             }
             else
             {
-                this.StatusText.Text = "Waiting...";
+                this.StatusText.Text = "等待...";
                 this.StatusText.ForeColor = Color.Blue;
                 this.PatchButton.Enabled = false;
                 this.progressBar1.Value = 0;

@@ -24,21 +24,21 @@ namespace DbhFpsPatcher
                 DateTime then = DateTime.Now;
                 while (IsFileLocked(path) && DateTime.Now - then < TimeSpan.FromSeconds(30))
                 {
-                    Form1.SetStatus("Waiting for file access...", System.Drawing.Color.YellowGreen);
+                    Form1.SetStatus("等待文件访问...", System.Drawing.Color.YellowGreen);
                     Thread.Sleep(TimeSpan.FromSeconds(1));
                 }
                 if (IsFileLocked(path))
                 {
-                    Form1.SetStatus("Error: Could not write to file.", System.Drawing.Color.Red);
+                    Form1.SetStatus("错误：无法写入文件。", System.Drawing.Color.Red);
                     return false;
                 }
-                Form1.SetStatus("Writing to disk...", System.Drawing.Color.YellowGreen);
+                Form1.SetStatus("正在写入磁盘...", System.Drawing.Color.YellowGreen);
                 using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
                 {
                     memStream.CopyTo(fs);
                     fs.Flush();
                 }
-                Form1.SetStatus("Address patched!", System.Drawing.Color.Green);
+                Form1.SetStatus("地址已修补！", System.Drawing.Color.Green);
                 return true;
             }
         }
@@ -47,7 +47,7 @@ namespace DbhFpsPatcher
         {
             if (IsFileLocked(path))
             {
-                Form1.SetStatus("Error: Executable is locked. Can't patch.", System.Drawing.Color.Red);
+                Form1.SetStatus("错误：可执行文件被锁定，无法修补。", System.Drawing.Color.Red);
                 Form1.SetProgress(100, System.Drawing.Color.Red);
                 return;
             }
@@ -60,19 +60,19 @@ namespace DbhFpsPatcher
             {
                 if (!Pattern.Find(exe, pb, out long offsetFound))
                 {
-                    Form1.SetStatus("Error: FPS Limit could not be found. Already patched or unsupported version.", System.Drawing.Color.Red);
+                    Form1.SetStatus("错误：未找到FPS限制，可能已被修补或不支持该版本。", System.Drawing.Color.Red);
                     Form1.SetProgress(100, System.Drawing.Color.Red);
                     return;
                 }
                 if (!PatchFile(exe, offsetFound, path))
                 {
-                    Form1.SetStatus("Error: Executable file could not be patched.", System.Drawing.Color.Red);
+                    Form1.SetStatus("错误：无法修补可执行文件。", System.Drawing.Color.Red);
                     isPatched = false;
                     break;
                 }
             }
             if (isPatched)
-                Form1.SetStatus("Game patched!", System.Drawing.Color.Green);
+                Form1.SetStatus("游戏已成功修补！", System.Drawing.Color.Green);
         }
 
         private static void CheckBackup(string path)

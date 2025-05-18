@@ -48,56 +48,56 @@
             // 
             this.TitleLabel.AutoSize = true;
             this.TitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitleLabel.Location = new System.Drawing.Point(23, 9);
+            this.TitleLabel.Location = new System.Drawing.Point(23, 8);
             this.TitleLabel.Name = "TitleLabel";
-            this.TitleLabel.Size = new System.Drawing.Size(300, 13);
+            this.TitleLabel.Size = new System.Drawing.Size(284, 13);
             this.TitleLabel.TabIndex = 0;
-            this.TitleLabel.Text = "Detroit Become Human Fps Patcher by PhantomGamers";
+            this.TitleLabel.Text = "底特律化身为人帧率补丁 由PhantomGamers制作";
             // 
             // DescriptionLabel
             // 
             this.DescriptionLabel.AutoSize = true;
-            this.DescriptionLabel.Location = new System.Drawing.Point(42, 22);
+            this.DescriptionLabel.Location = new System.Drawing.Point(25, 24);
             this.DescriptionLabel.Name = "DescriptionLabel";
-            this.DescriptionLabel.Size = new System.Drawing.Size(130, 13);
+            this.DescriptionLabel.Size = new System.Drawing.Size(113, 12);
             this.DescriptionLabel.TabIndex = 1;
-            this.DescriptionLabel.Text = "Change the max FPS limit!";
+            this.DescriptionLabel.Text = "修改最大帧率限制！";
             // 
             // GameExecutableLabel
             // 
             this.GameExecutableLabel.AutoSize = true;
-            this.GameExecutableLabel.Location = new System.Drawing.Point(23, 50);
+            this.GameExecutableLabel.Location = new System.Drawing.Point(24, 48);
             this.GameExecutableLabel.Name = "GameExecutableLabel";
-            this.GameExecutableLabel.Size = new System.Drawing.Size(94, 13);
+            this.GameExecutableLabel.Size = new System.Drawing.Size(77, 12);
             this.GameExecutableLabel.TabIndex = 2;
-            this.GameExecutableLabel.Text = "Game Executable:";
+            this.GameExecutableLabel.Text = "游戏exe文件:";
             // 
             // PathBox
             // 
-            this.PathBox.Location = new System.Drawing.Point(123, 47);
+            this.PathBox.Location = new System.Drawing.Point(106, 43);
             this.PathBox.Name = "PathBox";
-            this.PathBox.Size = new System.Drawing.Size(172, 20);
+            this.PathBox.Size = new System.Drawing.Size(172, 21);
             this.PathBox.TabIndex = 3;
             this.PathBox.TextChanged += new System.EventHandler(this.PathBox_TextChanged);
             // 
             // BrowseButton
             // 
-            this.BrowseButton.Location = new System.Drawing.Point(301, 44);
+            this.BrowseButton.Location = new System.Drawing.Point(284, 41);
             this.BrowseButton.Name = "BrowseButton";
-            this.BrowseButton.Size = new System.Drawing.Size(75, 23);
+            this.BrowseButton.Size = new System.Drawing.Size(75, 21);
             this.BrowseButton.TabIndex = 4;
-            this.BrowseButton.Text = "Browse";
+            this.BrowseButton.Text = "选择文件";
             this.BrowseButton.UseVisualStyleBackColor = true;
             this.BrowseButton.Click += new System.EventHandler(this.BrowseButton_Click);
             // 
             // PatchButton
             // 
             this.PatchButton.Enabled = false;
-            this.PatchButton.Location = new System.Drawing.Point(382, 44);
+            this.PatchButton.Location = new System.Drawing.Point(365, 41);
             this.PatchButton.Name = "PatchButton";
-            this.PatchButton.Size = new System.Drawing.Size(75, 23);
+            this.PatchButton.Size = new System.Drawing.Size(75, 21);
             this.PatchButton.TabIndex = 5;
-            this.PatchButton.Text = "Patch";
+            this.PatchButton.Text = "修补";
             this.PatchButton.UseVisualStyleBackColor = true;
             this.PatchButton.Click += new System.EventHandler(this.PatchButton_Click);
             // 
@@ -105,36 +105,36 @@
             // 
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.StatusLabel.Location = new System.Drawing.Point(18, 97);
+            this.StatusLabel.Location = new System.Drawing.Point(24, 93);
             this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(40, 13);
+            this.StatusLabel.Size = new System.Drawing.Size(35, 12);
             this.StatusLabel.TabIndex = 6;
-            this.StatusLabel.Text = "Status:";
+            this.StatusLabel.Text = "状态:";
             // 
             // StatusText
             // 
             this.StatusText.AutoSize = true;
             this.StatusText.ForeColor = System.Drawing.Color.Blue;
-            this.StatusText.Location = new System.Drawing.Point(65, 97);
+            this.StatusText.Location = new System.Drawing.Point(61, 93);
             this.StatusText.Name = "StatusText";
-            this.StatusText.Size = new System.Drawing.Size(52, 13);
+            this.StatusText.Size = new System.Drawing.Size(47, 12);
             this.StatusText.TabIndex = 7;
-            this.StatusText.Text = "Waiting...";
+            this.StatusText.Text = "等待...";
             // 
             // FPSLabel
             // 
             this.FPSLabel.AutoSize = true;
-            this.FPSLabel.Location = new System.Drawing.Point(24, 75);
+            this.FPSLabel.Location = new System.Drawing.Point(24, 71);
             this.FPSLabel.Name = "FPSLabel";
-            this.FPSLabel.Size = new System.Drawing.Size(93, 13);
+            this.FPSLabel.Size = new System.Drawing.Size(83, 12);
             this.FPSLabel.TabIndex = 8;
-            this.FPSLabel.Text = "Desired FPS Limit:";
+            this.FPSLabel.Text = "期望帧率限制:";
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(21, 133);
+            this.progressBar1.Location = new System.Drawing.Point(21, 123);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(426, 23);
+            this.progressBar1.Size = new System.Drawing.Size(426, 21);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 10;
             // 
@@ -144,30 +144,30 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(123, 73);
+            this.numericUpDown1.Location = new System.Drawing.Point(110, 69);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(49, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(49, 21);
             this.numericUpDown1.TabIndex = 11;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(178, 75);
+            this.label1.Location = new System.Drawing.Point(166, 73);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 13);
+            this.label1.Size = new System.Drawing.Size(119, 12);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Set to 0 for no limit";
+            this.label1.Text = "设置为 0 表示无限制";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(459, 180);
+            this.ClientSize = new System.Drawing.Size(459, 166);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.progressBar1);
